@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		/* AND if you're building for a library in a monorepo: */
+		"composite": true,
+		"target": "es2022",
+		/* If your code runs in the DOM: */
+		"lib": ["es2022", "dom", "dom.iterable"],
+		"moduleDetection": "force",
+
+		/* Ensure inputs are rooted in src so emitted files map predictably */
+		"rootDir": "src",
+		/* If transpiling with TypeScript: */
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"paths": {
+			"#/*": ["./src/*"]
+		},
+		"resolveJsonModule": true,
+		"allowJs": true,
+
+		/* Strictness */
+		"strict": true,
+		"noImplicitOverride": true,
+		"noUncheckedIndexedAccess": true,
+		/* AND if you're building for a library: */
+		"declaration": true,
+		"declarationMap": true,
+
+		"outDir": "dist",
+		"sourceMap": true,
+		/* Base Options: */
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		"skipLibCheck": true
+	},
+	/* Ensure we only include actual source files under src */
+	"include": ["src/**/*"],
+	/* Exclude emitted output, build folders, svelte sources and root-level config files */
+	"exclude": ["dist", "node_modules", "eslint.config.js", "prettier.config.ts"]
+}

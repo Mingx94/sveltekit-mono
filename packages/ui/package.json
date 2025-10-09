@@ -1,0 +1,50 @@
+{
+	"name": "@repo/ui",
+	"type": "module",
+	"version": "0.0.1",
+	"imports": {
+		"#*": [
+			"./src/*",
+			"./src/*.ts",
+			"./src/*/index.ts"
+		]
+	},
+	"exports": {
+		"./*": "./src/*/index.ts",
+		"./utils": "./src/utils/utils.ts",
+		"./app.css": "./src/app.css"
+	},
+	"scripts": {
+		"lint": "eslint . --fix",
+		"check": "svelte-check"
+	},
+	"peerDependencies": {
+		"svelte": ">=5.0.0"
+	},
+	"dependencies": {
+		"@fontsource-variable/manrope": "catalog:",
+		"@lucide/svelte": "catalog:",
+		"@tanstack/svelte-table": "catalog:",
+		"bits-ui": "catalog:",
+		"clsx": "catalog:",
+		"paneforge": "catalog:",
+		"svelte-check": "catalog:",
+		"tailwind-merge": "catalog:",
+		"tailwind-variants": "catalog:"
+	},
+	"devDependencies": {
+		"@internationalized/date": "catalog:",
+		"@repo/config": "workspace:*",
+		"@types/node": "catalog:",
+		"eslint": "catalog:",
+		"mode-watcher": "catalog:",
+		"package-manager-detector": "catalog:",
+		"runed": "catalog:",
+		"svelte": "catalog:",
+		"svelte-sonner": "catalog:",
+		"tailwindcss": "catalog:",
+		"tw-animate-css": "catalog:",
+		"typescript": "catalog:",
+		"vaul-svelte": "catalog:"
+	}
+}

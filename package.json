@@ -1,0 +1,25 @@
+{
+	"name": "sveltekit-mono",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"check": "turbo run check",
+		"format": "prettier --write .",
+		"lint": "turbo run lint"
+	},
+	"packageManager": "pnpm@10.9.0",
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=10.9.0"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:",
+		"prettier": "catalog:",
+		"prettier-plugin-svelte": "catalog:",
+		"prettier-plugin-tailwindcss": "catalog:",
+		"typescript": "catalog:",
+		"turbo": "catalog:"
+	}
+}
